@@ -29,6 +29,7 @@ blocks:
         - name: run eslint
           commands:
             - cache restore
+            - npm install
             - npm run lint
   - name: Run iOS tests
     dependencies:
